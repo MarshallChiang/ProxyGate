@@ -41,7 +41,6 @@ class proxy_cursor :
                     p[k] = v
         return p    
     def __formatting__(self, p) : 
-        print(self.resource['formatting'])
         for k, v in self.resource['formatting'].items():
             p[k] = eval(v)(p)
         return p
@@ -54,6 +53,7 @@ def recursive_index(o, p) :
             output = output[walk.pop(0)]
         except Exception :
             output = None
+            break
     return output
 
 def get_paths(d):
