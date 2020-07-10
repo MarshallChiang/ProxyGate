@@ -1,4 +1,4 @@
-import requests
+from resource import requests
 import os
 
 resource = requests.get(os.environ['resource_url']).json()

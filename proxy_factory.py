@@ -1,6 +1,6 @@
 import os
-import requests
 import json
+from resource import requests
 from partner import parse_lib
 from urllib.parse import parse_qs
 
@@ -19,14 +19,15 @@ def proxy_handler(even, config) :
         assert payload, ""
         params = parse_lib(path_params, payload)
         if params : 
-
             r = requests.get(os.environ['api_url'], params=params)
             response_message = r.text
+            print(params)
         else :
             response_message = "undefined path parameter : %s"%path_params
     except Exception as e :
         response_message = str(e) 
     finally :
+        print(response_message)
         return HttpsResponse(200, response_message)
     
 def HttpsResponse(statusCode, Message) :
