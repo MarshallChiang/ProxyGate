@@ -1,6 +1,6 @@
 import os
 import json
-from resource import requests
+import requests
 from partner import parse_lib
 from urllib.parse import parse_qs
 
