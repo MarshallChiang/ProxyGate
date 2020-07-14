@@ -56,6 +56,6 @@ $ aws lambda update-function-configuration --function-name ProxyGate \
 #### constant
    Fixed key-value pair to append to the payload.
 #### condition
-   Each `if` is bind to its `then`, as long as the clause(s) in `if` are satisfied, the payload will be rendered according to the value in `then`.
+   Each `if` statement is bind to their `then` action, as long as the clause(s) in `if` are satisfied, the payload will be rendered according to the value in `then`.
 #### formatting
    Manipulate the payload by evaling the lambda expression.
