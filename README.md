@@ -50,12 +50,12 @@ $ aws lambda update-function-configuration --function-name ProxyGate \
 }
 ```
 #### pathName
-    Wildcard value of {myProxy+} on API Gateway as a key to respective configuration.
+   Wildcard value of {myProxy+} on API Gateway as a key to respective configuration.
 #### mapping
-    To indicate the value in client request payload and transit into the defined key.
+   To indicate the value in client request payload and transit into the defined key.
 #### constant
-    Fixed key-value pair to append to the payload.
+   Fixed key-value pair to append to the payload.
 #### condition
-    Each `if` is bind to its `then`, as long as the clause(s) in `if` are satisfied, the payload will be rendered according to the value in `then`.
+   Each `if` is bind to its `then`, as long as the clause(s) in `if` are satisfied, the payload will be rendered according to the value in `then`.
 #### formatting
-    Manipulate the payload by evaling the lambda expression.
+   Manipulate the payload by evaling the lambda expression.
