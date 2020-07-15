@@ -1,6 +1,6 @@
 ## ProxyGate
 A proxy as lambda integrated function to consolidate and transit HTTP requests from {myProxy+} on API Gateway 
-![Component screenshot](https://marshallfiles.s3-ap-northeast-1.amazonaws.com/ProxyGate_diagram.png)
+![Component screenshot](https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/component_image_1_proxygate.png)
 
 ## Environment Setup
 
@@ -10,6 +10,7 @@ $ pip install -r requirements.txt -t .
 ```
 
 After implement to AWS lambda and integrated with API Gateway, setup os environment of server endpoint and configuration source.
+
 ```bash
 $ aws lambda update-function-configuration --function-name ProxyGate \
     --environment "Variables={api_url=https://www.server.site ,resource=https://www.config.site}"
