@@ -9,7 +9,7 @@ $ cd path/to/project
 $ pip install -r requirements.txt -t .
 ```
 
-After implement to AWS lambda and integrated with API Gateway
+After implement to AWS lambda and integrated with API Gateway, setup os environment of server endpoint and configuration source.
 ```bash
 $ aws lambda update-function-configuration --function-name ProxyGate \
     --environment "Variables={api_url=https://www.server.site ,resource=https://www.config.site}"
