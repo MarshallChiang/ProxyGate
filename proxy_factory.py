@@ -19,9 +19,10 @@ def proxy_handler(even, config) :
         assert payload, ""
         params = parse_lib(path_params, payload)
         if params : 
-            r = requests.get(os.environ['api_url'], params=params)
-            response_message = r.text
-            print(params)
+            for param in params :
+                r = requests.get(os.environ['api_url'], params=param)
+                response_message = r.text
+                print(param)
         else :
             response_message = "undefined path parameter : %s"%path_params
     except Exception as e :
