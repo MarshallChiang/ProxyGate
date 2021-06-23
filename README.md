@@ -1,6 +1,6 @@
 ## ProxyGate
 A proxy as lambda integrated function to consolidate and transit HTTP requests from {myProxy+} on API Gateway
-<img src=https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/component_image_1_proxygate.png>
+<img src=https://marshallchiang.github.io/assets/img/portfolio/fullsize/ProxyGate_image_1.png>
 
 ## Environment Setup
 
