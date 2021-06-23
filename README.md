@@ -8,7 +8,6 @@ A proxy as lambda integrated function to consolidate and transit HTTP requests f
 $ cd path/to/project
 $ pip install -r requirements.txt -t .
 ```
-<img src=https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/component_image_2_proxygate.png width=60% height=60%>
 
 After implement to AWS lambda and integrated with API Gateway, setup os environment of server endpoint and configuration source.
 
